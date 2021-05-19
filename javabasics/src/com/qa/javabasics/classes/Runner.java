@@ -3,8 +3,15 @@ package com.qa.javabasics.classes;
 class Runner {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		//START
+		System.out.println("APP START");
+		
+		
+		Person bob = new Person();
+		
+		
+		System.out.println("APP END");
+		//END
 	}
-
+		
 }

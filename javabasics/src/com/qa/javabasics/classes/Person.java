@@ -1,5 +1,6 @@
 package com.qa.javabasics.classes;
 
+//In class walk through//
 public class Person {
   
 	public String name;
@@ -10,6 +11,12 @@ public class Person {
   public String gender;
   public boolean isBreathing;
   public int walkSpeed = 30; // in feet 
+  
+  
+  //Constructor
+  public Person() {
+	  System.out.println("Your Person class has been created!");
+  }
 
 
   
