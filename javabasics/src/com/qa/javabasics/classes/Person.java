@@ -25,7 +25,7 @@ public class Person { // When creating this class, we can not use the static key
 
 
   public static void read() {
-	  System.out.println(this.name + " is reading the book titled: {given}");
+	  //System.out.println(this.name + " is reading the book titled: {given}");
   }
   public boolean isStillBreathing() {
 	  return isBreathing;
