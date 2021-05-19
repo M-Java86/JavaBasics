@@ -1,7 +1,8 @@
 package com.qa.javabasics.classes;
 
 //In class walk through//
-public class Person {
+public class Person { // When creating this class, we can not use the static keyword because the static keyword doesn't work well with the new
+	//keyword. Static doesn't represent attributes in the same way than a non attributes works//
   
 	public String name;
   public float height;
@@ -23,16 +24,15 @@ public class Person {
   }
 
 
-  
   public static void read() {
-	  System.out.println("{name} is reading the book title: {given}");
+	  System.out.println(this.name + " is reading the book titled: {given}");
   }
   public boolean isStillBreathing() {
 	  return isBreathing;
   }
 
   public String speak (String msg) {
-	  return "{name} says: " +msg;
+	  return this.name + " says: " + msg;
   }
   
   public int walk() {

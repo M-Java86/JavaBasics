@@ -9,6 +9,9 @@ class Runner {
 		
 		Person bob = new Person("Bob", 32, "male");
 		Person personVar = new Person("Charlotte", 28, "Female");
+		//Person trainer = new Person("Alan", 37, "Male");
+		
+		bob.read(new Book("title here"));
 		
 		System.out.println(personVar.gender);
 		
