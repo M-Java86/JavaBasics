@@ -9,7 +9,7 @@ class Runner {
 		
 		Person bob = new Person("Bob", 32, "male");
 		
-		System.out.println(bob.speak("Hello!"));
+		System.out.println(bob.gender);
 		
 		
 		System.out.println("APP END");
