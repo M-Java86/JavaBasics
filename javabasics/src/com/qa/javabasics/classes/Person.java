@@ -14,8 +14,12 @@ public class Person {
   
   
   //Constructor
-  public Person() {
-	  System.out.println("Your Person class has been created!");
+  public Person(String name, int age, String gender) {
+	this.name = name;
+	  this.age = age;
+	  this.gender = gender;
+	  
+	  //System.out.println("Your Person class has been created!");
   }
 
 

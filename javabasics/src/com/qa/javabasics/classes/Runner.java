@@ -7,7 +7,9 @@ class Runner {
 		System.out.println("APP START");
 		
 		
-		Person bob = new Person();
+		Person bob = new Person("Bob", 32, "male");
+		
+		System.out.println(bob.name);
 		
 		
 		System.out.println("APP END");
