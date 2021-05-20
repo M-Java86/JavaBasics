@@ -1,48 +1,46 @@
 package com.qa.javabasics.classes;
 
-//In class walk through//
-public class Person { // When creating this class, we can not use the static keyword because the static keyword doesn't work well with the new
-	//keyword. Static doesn't represent attributes in the same way than a non attributes works//
-  
-	public String name;
-  public float height;
-  public int age;
-  public String eyecolor;
-  public String ethnicity;
-  public String gender;
-  public boolean isBreathing;
-  public int walkSpeed = 30; // in feet 
-  
-  
-  //Constructor
-  public Person(String name, int age, String gender) {
-	this.name = name;
-	  this.age = age;
-	  this.gender = gender;
-	  
-	  //System.out.println("Your Person class has been created!");
-  }
+//In class Task @10:30 am//
+ public class Manager extends employee {
+	 
+	 private double bonus;
+	 
+	 public Manager(int id, String name, long salary, double bonus) {
+		 
+		 super(id, name , salary);
+		 this.bonus = bonus;
+		 this.bonus = salary + this.bonus;
+	 }
+	 
+	 public Manager(int i, String string, int j) {
+		// TODO Auto-generated constructor stub
+	}
 
+	public static void main(String[] args) {
+		 
+		 Manager mng = new Manager (1, "Manager" 10000, 100);
+		 Employee emp = new Employee(2, "Employer", 10000);
+		 
+		 System.out.println("MANAGER SALARY" + mng.getSalary() + " " + mng.getID());
+		 System.out.println("EMPLOYER SALARY" + ((Manager) emp).getSalary() + " " + ((Manager) emp).getID());
+	 }
 
-  public static void read() {
-	  //System.out.println(this.name + " is reading the book titled: {given}");
-  }
-  public boolean isStillBreathing() {
-	  return isBreathing;
-  }
+	private String getID() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
-  public String speak (String msg) {
-	  return this.name + " says: " + msg;
-  }
-  
-  public int walk() {
-	  return walkSpeed; 
-  }
-}
+	private String getSalary() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+ }
+	
+	
+	
 
-  
-  
-  
+	
+	 	
  
 
 
