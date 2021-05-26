@@ -7,6 +7,7 @@ class Runner {
 		System.out.println("APP START");
 		
 		
+		
 		Person bob = new Person("Bob", 32, "male");
 		Person personVar = new Person("Charlotte", 28, "Female");
 		//Person trainer = new Person("Alan", 37, "Male");
